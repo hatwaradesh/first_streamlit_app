@@ -28,7 +28,7 @@ def get_fruityvice_data(thisfruit_choice):
   fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
   return fruityvice_normalized
 
-streamline.header(‘Fruityvice Fruit Advice!’)
+streamline.header("Fruityvice Fruit Advice!")
 try:
   fruit_choice = streamline.text_input(‘What fruit would you like information about?’)
   if not fruit_choice:
